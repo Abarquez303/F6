@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tutorials - Delicious Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/finalimage.png" alt="Logo" class="logo">
+            <h1>Delicious Recipes</h1>
+        </div>
+        <button class="toggle-btn" id="toggle-btn">☰</button>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">Recipes</a>
+        <a href="#tips">Cooking Tips</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="videos" class="section">
+        <div class="container">
+            <h2>Video Tutorials</h2>
+            <div class="videos">
+                <div class="card">
+                    <img src="images/adobo.jpg" alt="Video 1">
+                    <h3>Video for Adobo</h3>
+                    <!-- Add your video content here -->
+                </div>
+                <div class="card">
+                    <img src="images/sinigang.jpg" alt="Video 2">
+                    <h3>Video for Pork Sinigang</h3>
+                    <!-- Add your video content here -->
+                </div>
+                <div class="card">
+                    <img src="images/pancit.jpg" alt="Video 3">
+                    <h3>Video for Pancit Canton</h3>
+                    <!-- Add your video content here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="images/finalimage.png" alt="Logo">
+            </div>
+            <div class="contact-info">
+                <p>Web Designer: Matthew T. Abarquez</p>
+                <p>Email: MattLawrenceA@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="close-btn">✖</button>
+        <h2>Sidebar Menu</h2>
+        <a href="index.html">Home</a>
+        <a href="index.html">Recipes</a>
+        <a href="#tips">Cooking Tips</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('toggle-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const sidebar = document.getElementById('sidebar');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
